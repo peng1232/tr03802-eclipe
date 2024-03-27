@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+	<tlib-version>2.0</tlib-version>
+	<short-name>tr03802_tags</short-name>
+	<uri>http://www.trkj.com/tags</uri>
+	
+
+	<tag>
+		<!-- 标签名称 -->
+		<name>page</name>
+		<!-- 标签处理器类名 -->
+		<tag-class>tag.PageTag</tag-class>
+		<!-- 标签体为空 -->
+		<body-content>empty</body-content>
+		<!-- 配置属性 -->
+		<attribute>
+			<!-- 属性名 -->
+			<name>controller</name>	
+			<!-- 属性是否必须 -->
+			<required>true</required>
+			<!-- 属性是否可为EL表达式 -->
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 属性名 -->
+			<name>curpage</name>	
+			<!-- 属性是否必须 -->
+			<required>true</required>
+			<!-- 属性是否可为EL表达式 -->
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 属性名 -->
+			<name>pagesize</name>	
+			<!-- 属性是否必须 -->
+			<required>true</required>
+			<!-- 属性是否可为EL表达式 -->
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 属性名 -->
+			<name>total</name>	
+			<!-- 属性是否必须 -->
+			<required>true</required>
+			<!-- 属性是否可为EL表达式 -->
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 属性名 -->
+			<name>where</name>	
+			<!-- 属性是否必须 -->
+			<required>false</required>
+			<!-- 属性是否可为EL表达式 -->
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+
+</taglib>
